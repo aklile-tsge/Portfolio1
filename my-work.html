@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aklile Tsge Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+   <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="AKK.jpg" alt="AK Logo">
+    </div>
+    <div class="menu-container">
+      <div class="menu-icon">
+        <img src="menu.png" alt="Menu Icon" id="menu-toggle">
+        <span class="cross-icon" id="cross-icon" style="display: none;">✕</span>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="my-work.html">MyWork</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <div class="main-container">
+ <!-- Work Section -->
+    <section id="my-work" class="fullpage-section">
+      <canvas id="workCanvas"></canvas>
+      <div class="content-wrapper">
+        <h2>My Work</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="video">Video</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="code">Code</button>
+        </div>
+        
+        <div class="work-grid">
+          <div class="work-item" data-category="video">
+            <img src="video-work.jpeg" alt="Video Editor Work">
+            <div class="overlay">Video Editing Project</div>
+          </div>
+          <div class="work-item" data-category="web">
+            <img src="web-work.png" alt="Web Developer Work">
+            <div class="overlay">Web Development Project</div>
+          </div>
+          <div class="work-item" data-category="code">
+            <img src="coder-work.jpeg" alt="Coder Work">
+            <div class="overlay">Coding Project</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aklile Tsge Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+   <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="AKK.jpg" alt="AK Logo">
+    </div>
+    <div class="menu-container">
+      <div class="menu-icon">
+        <img src="menu.png" alt="Menu Icon" id="menu-toggle">
+        <span class="cross-icon" id="cross-icon" style="display: none;">✕</span>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+           <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="my-work.html">MyWork</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <div class="main-container">
+ <!-- About Section -->
+    <section id="about" class="fullpage-section">
+      <canvas id="aboutCanvas"></canvas>
+      <div class="content-wrapper">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="akiii.jpg" alt="Aklile Tsge" class="about-img">
+          <div class="about-details">
+            <h3 class="toggle-header" data-target="skills">Skills</h3>
+            <div id="skills" class="toggle-content">
+              <div class="svg-skills-container">
+                <svg width="300" height="200" viewBox="0 0 300 200" class="skills-chart">
+                  <path class="skill-arc" d="M50,100 A50,50 0 0,1 100,50" fill="none" stroke="#ff0000" stroke-width="20" stroke-dasharray="157 157" stroke-dashoffset="23.55" />
+                  <text x="75" y="60" text-anchor="middle" fill="#fff">85%</text>
+                  <text x="75" y="80" text-anchor="middle" fill="#fff" font-size="12">Video Editing</text>
+                  
+                  <path class="skill-arc" d="M110,50 A50,50 0 0,1 160,100" fill="none" stroke="#ff0000" stroke-width="20" stroke-dasharray="157 157" stroke-dashoffset="39.25" />
+                  <text x="135" y="60" text-anchor="middle" fill="#fff">75%</text>
+                  <text x="135" y="80" text-anchor="middle" fill="#fff" font-size="12">Web Dev</text>
+                  
+                  <path class="skill-arc" d="M160,100 A50,50 0 0,1 110,150" fill="none" stroke="#ff0000" stroke-width="20" stroke-dasharray="157 157" stroke-dashoffset="47.1" />
+                  <text x="135" y="140" text-anchor="middle" fill="#fff">70%</text>
+                  <text x="135" y="160" text-anchor="middle" fill="#fff" font-size="12">Programming</text>
+                </svg>
+              </div>
+            </div>
+            <h3 class="toggle-header" data-target="education">Education</h3>
+            <div id="education" class="toggle-content">
+              <p>I am a passionate and dedicated third-year Computer Science student at Gondar University,
+                eager to expand my knowledge in software development, algorithms, and emerging technologies.
+                 With a strong foundation in programming, problem-solving, and teamwork, I actively engage in
+                  academic projects and coding challenges to sharpen my skills. My coursework has equipped me
+                  with expertise in languages like Java, Python, and C++, as well as concepts in databases,
+                   data structures, and web development. Beyond academics, I enjoy collaborating with peers 
+                   on innovative projects and staying updated with the latest tech trends. My goal is to leverage
+                    my education and creativity to build impactful solutions that address real-world challenges."</p>
+              <svg width="100%" height="100" class="education-timeline">
+                <line x1="50" y1="20" x2="250" y2="20" stroke="#ff0000" stroke-width="3" />
+                <circle cx="50" cy="20" r="10" fill="#ff0000" />
+                <circle cx="150" cy="20" r="10" fill="#ff0000" />
+                <circle cx="250" cy="20" r="10" fill="#ff0000" />
+                <text x="50" y="50" text-anchor="middle" fill="#fff">High School</text>
+                <text x="150" y="50" text-anchor="middle" fill="#fff">University Start</text>
+                <text x="250" y="50" text-anchor="middle" fill="#fff">Current</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

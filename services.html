@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aklile Tsge Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+   <header>
+    <div class="logo">
+      <img src="AKK.jpg" alt="AK Logo">
+    </div>
+    <div class="menu-container">
+      <div class="menu-icon">
+        <img src="menu.png" alt="Menu Icon" id="menu-toggle">
+        <span class="cross-icon" id="cross-icon" style="display: none;">✕</span>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="my-work.html">MyWork</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="main-container">
+    <section id="services" class="fullpage-section">
+      <canvas id="servicesCanvas"></canvas>
+      <div class="content-wrapper">
+        <h2>My Services</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <canvas class="service-canvas" width="200" height="200" data-service="video"></canvas>
+            <h3>Video Editor</h3>
+            <p>Video Editing is the art and process of manipulating and rearranging video footage to 
+              create a cohesive and compelling visual narrative. It involves cutting and splicing clips, 
+              adding transitions, visual effects, color correction, audio mixing, and incorporating text or
+               graphics to enhance storytelling.</p>
+          </div>
+          <div class="service-item">
+            <canvas class="service-canvas" width="200" height="200" data-service="web"></canvas>
+            <h3>Web Developer</h3>
+            <p>Web Programming is the process of building and maintaining websites and web applications 
+              using programming languages, frameworks, and tools. It involves both front-end development
+               (client-side) with HTML, CSS, and JavaScript to create interactive user.</p>
+          </div>
+          <div class="service-item">
+            <canvas class="service-canvas" width="200" height="200" data-service="code"></canvas>
+            <h3>Coder</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
